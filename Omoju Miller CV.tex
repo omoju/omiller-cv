@@ -1,0 +1,346 @@
+
+%%% A template to produce a nice-looking Curriculum Vitae.
+%%% Adapted from Kieran Healy 
+%%% Most recent version is at http://kjhealy.github.com/kjh-vita
+%%%
+%%% ------------------------------------------------------------------------
+%%% Requirements that are included in a modern tex distribution:
+%%% ------------------------------------------------------------------------
+%%% xelatex
+%%% fontspec.sty
+%%% hyperrref.sty
+%%% xunicode.sty
+%%% color.sty
+%%% url.sty
+%%% fancyhdr.sty
+%%% memoir.cls
+%%% fontawesome.sty
+%%%
+%%% 
+%%% 
+%%% ------------------------------------------------------------------------
+%%% Requirements from https://github.com/kjhealy/latex-custom-kjh
+%%% ------------------------------------------------------------------------
+%%% org-preamble-xelatex.sty
+%%% memoir-article-styles.sty
+%%%
+%%% ------------------------------------------------------------------------
+%%% Optional
+%%% ------------------------------------------------------------------------
+%%% git
+%%% vc.sty
+%%% revnum.sty
+%%% Fonts
+%%%
+%%% ------------------------------------------------------------------------
+%%% Note
+%%%------------------------------------------------------------------------
+%%% Because this is a hand-tweaked file, be on the look out for \medksip, 
+%%% \bigskip and \newpage commands here and there, which are used to balance
+%%% the layout or avoid widows & orphans, etc. You should of course add or 
+%%% remove these as needed.
+%%%------------------------------------------------------------------------
+
+\documentclass[11pt,article,oneside]{memoir}   
+\usepackage{org-preamble-xelatex} 
+\usepackage{fontawesome,url}
+
+
+%%%------------------------------------------------------------------------
+%%% Metadata
+%%%------------------------------------------------------------------------
+
+%% Change as needed. Or just add me as a coauthor. Only some of these are 
+%% used below in the hyperref declaration and address banner section.
+\def\myauthor{Omoju Thomas Miller}
+\def\mytitle{Vita}
+\def\mycopyright{\myauthor}
+\def\mykeywords{}
+\def\mybibliostyle{plain}
+\def\mybibliocommand{}
+\def\mysubtitle{}
+%% \def\myaffiliation{Duke University}
+%% \def\myaddress{Sociology Department}
+\def\myemail{omojumiller@gmail.com}
+\def\myweb{http://omojumiller.com}
+\def\myphone{(415) 967-2354}
+\def\mytwitter{@omojumiller}
+\def\myversion{}
+\def\myrevision{}
+
+
+%% \def\myaffiliation{Duke University}
+\def\myauthor{Omoju Thomas Miller}
+\date{} % not used (revision control instead)
+\def\mykeywords{Omoju, Thomas Miller, Omoju Thomas Miller, Vita, CV, Resume, Data Scientist}
+
+%%%------------------------------------------------------------------------  
+%%% Git version tracking 
+%%%------------------------------------------------------------------------
+
+%% If you don't use git or the vc package (from CTAN), comment this out.
+%% If you comment it out, be sure to remove the \rfoot comment below, too.
+%% \input{vc}
+
+%%%------------------------------------------------------------------------
+%%% Document
+%%%------------------------------------------------------------------------
+\begin{document}
+
+%% Choose fonts for use with xelatex
+%% Minion and Myriad are widely available, from Adobe. 
+%% Pragmata is available to buy at http://www.fsd.it/fonts/pragma.htm
+%% and is worth every penny. Any good monospace font will work fine, though.
+%% Consolas or inconsolata are good alternatives.
+\setromanfont[Mapping={tex-text}, 
+	Numbers={OldStyle},
+	Ligatures={Common}]{Minion Pro}
+\setsansfont[Mapping=tex-text,
+	Ligatures={Common}, 
+	Colour=AA0000]{Myriad Pro}
+\setmonofont[Mapping=tex-text,Scale=0.72]{Consolas} 
+
+\newfontface\scheader[SmallCapsFont={Minion Pro},SmallCapsFeatures={Letters=SmallCaps}]{Minion Pro}
+
+\newfontface\addressblock[Mapping={tex-text}, 
+	Numbers={OldStyle},
+	Ligatures={Common}]{Minion Pro Medium}
+
+
+%%%------------------------------------------------------------------------
+%%% Local commands
+%%%------------------------------------------------------------------------
+
+%% Marginal header
+%% Note: as the document goes on you may need to introduce a (gradually increasing)
+%% \vspace element to keep the marginal header pleasingly aligned with the first 
+%% item in the body text. Like this: \marginhead{{\vskip 0.4em}Grants}, or 
+%% \marginhead{{\vskip 0.8em}Service}. Experiment as needed.
+\newcommand{\marginhead}[1]{\marginpar{\textsf{{\footnotesize\vspace{-1em}\flushright #1}}}}
+
+
+%% [optional] custom ampersand (font consistent with the one chosen above)
+% \newcommand{\amper}{{\fontspec[Scale=.95,Colour=AA0000]{Minion Pro Medium}\selectfont\&\,}}
+
+%% No bullets on labels
+\renewcommand{\labelitemi}{~} 
+
+%% Custom hanging indent for vita items
+\def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
+%\def\ind{\hangindent=18pt\hangafter=1 \noindent}
+\def\labelitemi{~}
+\renewcommand{\labelitemii}{~}
+
+%%%------------------------------------------------------------------------
+%%% Page layout
+%%%------------------------------------------------------------------------
+
+% These lines will insert git revision info in the footer, using the vc
+% package---see docs for vc package for details. Comment out this line
+% if you're not using vc, and also remove the \input{vc} line above.
+\pagestyle{kjh}
+\thispagestyle{kjhgit}
+
+
+%%%------------------------------------------------------------------------
+%%% Address and contact block
+%%%------------------------------------------------------------------------
+\begin{minipage}[t]{2.95in}
+%%  \flushright {\footnotesize 
+%% \href{http://sociology.duke.edu}{Department of Sociology}, \\ Box 90088, \\ Duke University, \\ \vspace{-0.05in} Durham, \textsc{nc} 27708.}  
+  
+\end{minipage}
+\hfill     
+%\begin{minipage}[t]{0.0in}
+% dummy (needed here)
+%\end{minipage}
+\hfill
+\begin{minipage}[t]{1.3in}
+  \flushright \footnotesize  \addressblock \myphone \, \faPhone \\ 
+  {\scriptsize  \texttt{\href{http://twitter.com/omojumiller}{\mytwitter}} \, \faTwitter }  \\ 
+  {\scriptsize  \texttt{\href{mailto:\myemail}{\myemail}} \, \faEnvelope} \\
+  {\scriptsize  \texttt{\href{\myweb}{\myweb}} \, \faGlobe}
+\end{minipage}
+
+\medskip
+
+%% Name 
+\noindent{\LARGE\scheader \textsc{omoju thomas miller}}
+\reversemarginpar
+
+\bigskip       
+
+
+%% Education
+
+\marginhead{\sffamily {{\vskip -0.23em} education}}
+
+%\noindent\emph{Princeton University \vspace{0.01in}}
+
+\ind Ph.D, Computer Science Education, UC Berkeley, 2015.
+
+\ind \hspace{0.35in} \footnotesize Dissertation: \emph{HipHopathy, A Socio-Curricular Study of Introductory Computer Science.} \normalsize \vspace{0.05in}
+
+\ind M.S., Electrical and Computer Engineering, University of Memphis, 2004. 
+
+\ind \hspace{0.35in} \footnotesize Thesis: \emph{Semantic Web Expert System (SWEXSYS) Shell.} \normalsize \vspace{0.01in}
+
+\ind B.S., Computer Science, University of Memphis, 2001.
+ 
+ 
+  
+%% Publications
+\marginhead{\sffamily {\vskip 0.35em} profession \newline experience}
+\medskip
+
+\noindent\emph{Experience \vspace{0.05in}}
+%% Use revnumerate environment if numbered publications are needed. 
+%% (Include it above in the preamble).
+%% \renewcommand{\labelenumi}{\textsc{a}\theenumi.}
+%% \begin{revnumerate}
+
+\ind Chair Advisory Board, Learners Guild, Oakland, CA, December 2015 - Present.
+
+%\end{revnumerate}
+%\newpage
+\bigskip
+\noindent\emph{Projects  \vspace{0.05in}}
+
+%\renewcommand{\labelenumi}{\textsc{r}\theenumi.}
+%\begin{revnumerate}
+
+\ind Hiphopathy
+%\end{revnumerate}
+%\newpage
+\bigskip
+
+
+%% Publications
+\marginhead{\sffamily {\vskip 0.35em} publications}
+\medskip
+
+\noindent\emph{Conference proceedings \vspace{0.05in}}
+ 
+%% Use revnumerate environment if numbered publications are needed. 
+%% (Include it above in the preamble).
+%% \renewcommand{\labelenumi}{\textsc{a}\theenumi.}
+%% \begin{revnumerate}
+
+\ind Forthcoming. Omoju Miller. ``Gaining Insights into the Effects of Culturally Responsive Curriculum on Historically Underrepresented Students' Desire for Computer Science.'' \emph{Proceedings of the 123rd ASEE Annual Conference, New Orleans, LA.}
+
+\ind D.J. Russomanno, C. Kothari and O. Thomas. 2005. ``\href{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=E7z_wrwAAAAJ&sortby=pubdate&citation_for_view=E7z_wrwAAAAJ:u5HHmVD_uO8C}{Building a Sensor Ontology: A Practical Approach Leveraging ISO and OGC Models}.'' \emph{The 2005 International Conference on Artificial Intelligence, Las Vegas, NV} 637--643. 
+
+\ind D.J. Russomanno, C. Kothari and O. Thomas. 2005. ``\href{http://scholar.google.com/citations?view_op=view_citation&hl=en&user=E7z_wrwAAAAJ&citation_for_view=E7z_wrwAAAAJ:u-x6o8ySG0sC}{Sensor Ontologies: From Shallow to Deep Models.}'' \emph{Proceedings of the 37th Southeastern Symposium on Systems Theory, IEEE Press, Tuskegee, AL} 107--112. 
+
+\ind O. Thomas and D.J. Russomanno. 2005. ``\href{http://scholar.google.com/citations?view_op=view_citation&hl=en&user=E7z_wrwAAAAJ&citation_for_view=E7z_wrwAAAAJ:d1gkVwhDpl0C}{Applying the Semantic Web Expert System Shell to Sensor Fusion using Dempster-Shafer Theory.}'' \emph{Proceedings of the 37th Southeastern Symposium on Systems Theory, IEEE Press, Tuskegee, AL}. 11--14.
+
+\ind O.A. Thomas and D.J. Russomanno. 2004. ``\href{http://scholar.google.com/citations?view_op=view_citation&hl=en&user=E7z_wrwAAAAJ&citation_for_view=E7z_wrwAAAAJ:2osOgNQ5qMEC}{SWEXSYS: A Semantic Web Expert System Shell}.'' \emph{Proceedings of the IASTED International Conference on Artificial Intelligence and Applications, part of the 23rd Multi-Conference on Applied Informatics, Innsbruck, Austria} 240--245. 
+
+%\end{revnumerate}
+%\newpage
+\bigskip
+\noindent\emph{Workshops and Presentations  \vspace{0.05in}}
+
+%\renewcommand{\labelenumi}{\textsc{r}\theenumi.}
+%\begin{revnumerate}
+
+\ind Jennifer Arguello, Tiffany Price, Alexis Martin, Frieda McAlear, Omoju Miller, Dan Garcia. 2015. ``Engaging Underrepresented Youth in Computer Science."  \emph{Computer Science Teachers Association (CSTA) in Grapevine, TX.}
+
+\ind Omoju Miller. 2015. ``Towards a Global Framework for Culturally Resonant Learning.'' \emph{2015 Sage Assembly in Paris, France.} 
+
+\ind Daniel D Garcia, Brian Harvey, Tiffany Barnes, Dan Armendariz, Jon McKinsey, Zachary MacHardy, Omoju Miller, Barry Peddycord III, Eugene Lemon, Sean Morris, Josh Paley. 2014. ``\href{http://dl.acm.org/citation.cfm?id=2539026}{AP CS Principles and the Beauty and Joy of Computing Curriculum.'' }\emph{Proceedings of the 45th ACM Technical Symposium on Computer Science Education,} 746--746. 
+
+\ind Brian Harvey, Daniel D Garcia, Tiffany Barnes, Nathaniel Titterton, Omoju Miller, Dan Armendariz, Jon McKinsey, Zachary Machardy, Eugene Lemon, Sean Morris, Josh Paley. 2014. ``\href{http://dl.acm.org/citation.cfm?id=2539022}{Snap!(Build your own Blocks).''} \emph{Proceedings of the 45th ACM Technical Symposium on Computer Science Education,} 749--749. 
+
+\ind Omoju Miller, Jordan Arnesen, Eric Chu, Grayson Flood, Kevin Funkhouser, Alex Greenspan, Daniel Hsu. 2013. ``Hiphopathy: A Computational Thinking Process to Encourage Empathy.'' \emph{2013 California Cognitive Science Conference, Berkeley, CA.}    
+
+%\end{revnumerate}
+%\newpage
+\bigskip
+\noindent\emph{Essays and reviews \vspace{0.05in}}
+
+%\renewcommand{\labelenumi}{\textsc{r}\theenumi.}
+%\begin{revnumerate}
+
+
+\ind Frieda McAlear, Omoju Miller, Dan Garcia, Alexis Martin. 2016. ``\href{http://www.csta.acm.org/Communications/sub/CSTAVoice_Files/csta_voice_01_2016.pdf}{Equity in Computer Science: From Exposure to Entrepreneurship.''} \emph{Computer Science Teacher's Association (CSTA) Voice, } 9--10. 
+
+\ind Omoju Miller. 2014. ``\href{http://dl.acm.org/citation.cfm?id=2604994}{Its Deeper than Rap, Toward Culturally Responsive CS.'' }\emph{XRDS: Crossroads,  The ACM Magazine for Students, } 28--30. 
+
+\ind Omoju Miller. 2013. ``\href{http://kaporcenter.org/wp-content/uploads/2013/10/Kapor_CodingLandscape_R3.pdf}{Winning with Both Sides of the Coin.''} \emph{Coding Nation Report} 6--7. 
+% %\end{revnumerate}
+ 
+ \bigskip
+
+%\newpage
+
+\marginhead{\sffamily {\vskip 0.5em}selected \newline conference \newline presentations \newline since 2012}
+\medskip
+
+\ind Keynote ``15+ Years of Learning Computational Intelligence.'' Annual OUSD Dinner with a Scientist, California, May 2016. 
+
+\ind Invited panelist ``SPIE Women in Optics.'' SPIE Photonics West Annual Conference, California, February 2016. 
+
+\ind Invited speaker ``Breaking Barriers: Changing the Landscape.'' Andela, Lagos, Nigeria, January 2016. 
+
+\ind Invited panelist ``Behind the Click: Intersection of Women of Color in STEM and Social Justice.'' Black Girls Code, California, December 2015.
+
+\ind Keynote ``Moonshot Thinking.'' Joint Board of Advisors Meeting, Purdue School of Engineering and Technology, IUPUI, Indiana, October 2015.
+
+\ind Keynote ``Breaking Barriers: Changing the Landscape.'' Youth Start Up Weekend at Castlemont High School, California, May 2015. 
+
+\ind Invited speaker, ``Breaking Barriers: Changing the Landscape.'' Office of Institutional Diversity, Harvey Mudd College, California, December 2014. 
+
+\ind Keynote, ``\href{https://www.youtube.com/watch?v=owXez6sIRbY&ab_channel=IUCEWIT}{Inventing the Mythical Creature: Or How to Stay, Lead, and Delight in Tech as a Woman.}'' Annual Celebration of the IU Center of Excellence for Women in Technology (CEWiT), Indiana, October 2014.
+
+\ind Invited presenter, ``Made With Code.'' Annual Dreamforce Developer's Conference, San Francisco, October 2014.
+
+\ind Invited presenter, ``Inventing the Mythical Creature: Or How to Stay, Lead, and Delight in Tech as a Woman.'' Focus 100, New York, September 2014.
+
+\ind Invited presenter, ``\#ThisIsGrit.'' White House Department of Education EdDataPalooza, Washington DC, January 2014.
+
+\ind Invited panelist, ``Social Justice in the Age of Big Data.'' Swinging and Flowing: Inclusion and Diversity in the Age of Data. The Data and Democracy Initiative @ CITRIS Berkeley, Berkeley, April 2012.
+
+\bigskip 
+
+\marginhead{\sffamily {\vskip 0.6em}grants,\newline honors, \newline \& awards}
+\medskip
+
+\ind Levo 100: Transformer, Levo League, California, 2015.
+
+\ind Bloomberg Beta Future Founder, Bloomberg Beta, California, 2014. 
+
+\ind Winner, White House Dept of Edu EdDataPalooza, Washington DC, January 2014
+
+\ind Kapor Capital Fellows, California, 2012.
+
+\ind Invited participant, TEDxSummit, Doha, Qatar, 2011.
+
+\ind Google CS Grad Forum Scholarship, California, 2010.
+
+\ind SESAME Graduate Division Fellowship, UC Berkeley, 2010--2011
+
+\ind Herff College of Engineering fellowship, Memphis, 2002--2006.
+
+\bigskip 
+
+\marginhead{\sffamily {\vskip 0.6em}press,\newline podcast, \newline \& coverage}
+\medskip
+
+\ind \href{http://best.berkeley.edu/2015/03/11/best-labber-in-berkeley-byte-qa-with-cs-ed-reformer-and-phd-candidate-omoju-miller/}{Q\&A with CS Ed Reformer and PhD Candidate Omoju Miller}, Berkeley Bytes, March 11, 2014.
+
+\ind \href{http://www.npr.org/sections/alltechconsidered/2014/10/05/351851015/fortune-tellers-step-aside-big-data-looks-for-future-entrepreneurs}{Fortune-Tellers, Step Aside: Big Data Looks For Future Entrepreneurs}, NPR's  All Tech Considered, October 5, 2014.
+
+\ind \href{https://www.blacksintechnology.net/the-road-to-50-podcast-african-americans-on-the-role-of-higher-education-in-innovation/}{African Americans on the role of Higher Education in Innovation}, \#BITTechTalk, December, 2014.
+
+\ind \href{http://roadtripnation.com/leader/omoju-miller}{RoadTrip Nation: Omoju's Open Road}, Pivot TV, March, 2015.
+
+\ind \href{http://hanselminutes.com/488/redesigning-computer-science-101-education-with-omoju-miller}{Redesigning Computer Science 101 Education with Omoju Miller}, The Hanselman Minutes Podcast: Fresh Air for Developers, August, 2015.
+
+\ind \href{https://www.youtube.com/watch?v=T0wQRr4RuqM&ab_channel=HBCUtoStartup}{Learners Guild, Investing in You to Code,} HBCU to Startup Podcast, March, 2016.
+
+\ind \href{http://audio.javascriptair.com/e/022-jsair-the-science-of-people-in-tech-with-kate-edwards-omoju-miller-and-steve-andrews/}{The Science of People in Tech}, JavaScript Air Podcast, May, 2016.
+
+
+
+\end{document}
