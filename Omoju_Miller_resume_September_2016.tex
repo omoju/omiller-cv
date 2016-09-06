@@ -1,0 +1,281 @@
+%%% A template to produce a nice-looking Curriculum Vitae.
+%%% Adapted from Kieran Healy 
+%%% Most recent version is at http://kjhealy.github.com/kjh-vita
+%%%
+%%% ------------------------------------------------------------------------
+%%% Requirements that are included in a modern tex distribution:
+%%% ------------------------------------------------------------------------
+%%% xelatex
+%%% fontspec.sty
+%%% hyperrref.sty
+%%% xunicode.sty
+%%% color.sty
+%%% url.sty
+%%% fancyhdr.sty
+%%% memoir.cls
+%%% fontawesome.sty
+%%%
+%%% 
+%%% 
+%%% ------------------------------------------------------------------------
+%%% Requirements from https://github.com/kjhealy/latex-custom-kjh
+%%% ------------------------------------------------------------------------
+%%% org-preamble-xelatex.sty
+%%% memoir-article-styles.sty
+%%%
+%%% ------------------------------------------------------------------------
+%%% Optional
+%%% ------------------------------------------------------------------------
+%%% git
+%%% vc.sty
+%%% revnum.sty
+%%% Fonts
+%%%
+%%% ------------------------------------------------------------------------
+%%% Note
+%%%------------------------------------------------------------------------
+%%% Because this is a hand-tweaked file, be on the look out for \medksip, 
+%%% \bigskip and \newpage commands here and there, which are used to balance
+%%% the layout or avoid widows & orphans, etc. You should of course add or 
+%%% remove these as needed.
+%%%------------------------------------------------------------------------
+
+\documentclass[11pt,article,oneside]{memoir}  
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=40mm,
+ right=10mm,
+ top=20mm,
+ bottom=20mm,
+ }
+\usepackage{org-preamble-xelatex} 
+\usepackage{fontawesome,url}
+\usepackage{enumitem} %get rid of spaces in listed
+
+
+%%%------------------------------------------------------------------------
+%%% Metadata
+%%%------------------------------------------------------------------------
+
+%% Change as needed. Or just add me as a coauthor. Only some of these are 
+%% used below in the hyperref declaration and address banner section.
+\def\myauthor{Omoju Miller}
+\def\mytitle{Vita}
+\def\mycopyright{\myauthor}
+\def\mykeywords{}
+\def\mybibliostyle{plain}
+\def\mybibliocommand{}
+\def\mysubtitle{}
+\def\myemail{omojumiller@cal.berkeley.edu}
+\def\myweb{http://omojumiller.com}
+\def\mytwitter{@omojumiller}
+\def\mylinkedin{http://buff.ly/1TXyVq5}
+\def\mygithub{https://github.com/omoju}
+\def\myversion{}
+\def\myrevision{}
+
+
+%% \def\myaffiliation{Duke University}
+\def\myauthor{Omoju Miller}
+\date{} % not used (revision control instead)
+\def\mykeywords{Omoju, Miller, Omoju Miller, Vita, CV, Resume, Data Scientist}
+
+%%%------------------------------------------------------------------------  
+%%% Git version tracking 
+%%%------------------------------------------------------------------------
+
+%% If you don't use git or the vc package (from CTAN), comment this out.
+%% If you comment it out, be sure to remove the \rfoot comment below, too.
+%% \input{vc}
+
+%%%------------------------------------------------------------------------
+%%% Document
+%%%------------------------------------------------------------------------
+\begin{document}
+
+%% Choose fonts for use with xelatex
+%% Minion and Myriad are widely available, from Adobe. 
+%% Pragmata is available to buy at http://www.fsd.it/fonts/pragma.htm
+%% and is worth every penny. Any good monospace font will work fine, though.
+%% Consolas or inconsolata are good alternatives.
+\setromanfont[Mapping={tex-text}, 
+	Numbers={OldStyle},
+	Ligatures={Common}]{Minion Pro}
+\setsansfont[Mapping=tex-text,
+	Ligatures={Common}, 
+	Colour=AA0000]{Myriad Pro}
+\setmonofont[Mapping=tex-text,Scale=0.72]{Consolas} 
+
+\newfontface\scheader[SmallCapsFont={Minion Pro},SmallCapsFeatures={Letters=SmallCaps}]{Minion Pro}
+
+\newfontface\addressblock[Mapping={tex-text}, 
+	Numbers={OldStyle},
+	Ligatures={Common}]{Minion Pro Medium}
+
+
+%%%------------------------------------------------------------------------
+%%% Local commands
+%%%------------------------------------------------------------------------
+
+%% Marginal header
+%% Note: as the document goes on you may need to introduce a (gradually increasing)
+%% \vspace element to keep the marginal header pleasingly aligned with the first 
+%% item in the body text. Like this: \marginhead{{\vskip 0.4em}Grants}, or 
+%% \marginhead{{\vskip 0.8em}Service}. Experiment as needed.
+\newcommand{\marginhead}[1]{\marginpar{\textsf{{\footnotesize\vspace{-1em}\flushright #1}}}}
+
+
+%% [optional] custom ampersand (font consistent with the one chosen above)
+% \newcommand{\amper}{{\fontspec[Scale=.95,Colour=AA0000]{Minion Pro Medium}\selectfont\&\,}}
+
+%% No bullets on labels
+\renewcommand{\labelitemi}{~} 
+
+%% Custom hanging indent for vita items
+\def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
+%\def\ind{\hangindent=18pt\hangafter=1 \noindent}
+\def\labelitemi{~}
+\renewcommand{\labelitemii}{~}
+
+%%%------------------------------------------------------------------------
+%%% Page layout
+%%%------------------------------------------------------------------------
+
+% These lines will insert git revision info in the footer, using the vc
+% package---see docs for vc package for details. Comment out this line
+% if you're not using vc, and also remove the \input{vc} line above.
+%\pagestyle{kjh}
+\thispagestyle{kjhgit}
+
+
+%%%------------------------------------------------------------------------
+%%% Address and contact block
+%%%------------------------------------------------------------------------
+\begin{minipage}[t]{2.95in}
+  
+\end{minipage}
+\hfill     
+%\begin{minipage}[t]{0.0in}
+% dummy (needed here)
+%\end{minipage}
+\hfill
+\begin{minipage}[t]{1.6in}
+  \flushright \footnotesize  \addressblock 
+  {\scriptsize  \texttt{\href{http://twitter.com/omojumiller}{\mytwitter}} \, \faTwitter }  \\ 
+  {\scriptsize  \texttt{\href{mailto:\myemail}{\myemail}} \, \faEnvelope} \\
+  {\scriptsize  \texttt{\href{\mylinkedin}{\mylinkedin}} \, \faLinkedin} \\
+  {\scriptsize  \texttt{\href{\mygithub}{\mygithub}} \, \faGithub} \\
+  {\scriptsize  \texttt{\href{\myweb}{\myweb}} \, \faGlobe}
+\end{minipage}
+
+\medskip
+
+%% Name 
+\noindent{\LARGE\scheader \textsc{\href{https://github.com/omoju}{omoju miller}}}
+
+\bigskip       
+\noindent{\large\scheader \textsc{Data Scientist with 6 years computational intelligence experience. \\ Ex-Google - UC Berkeley PhD.}}
+\reversemarginpar
+
+%% Skills
+\marginhead{\sffamily {{\vskip -0.23em} skills}}
+\medskip
+
+\ind Programming Languages: Python, C, C++, Ruby, HTML, Prolog
+
+\ind Framework: XGBoost, NLTK, SciKit Learn
+
+\ind Version Control Systems: Git
+\bigskip 
+
+%% Projects
+\marginhead{\sffamily {\vskip 0.35em} projects}
+\medskip
+
+\ind \href{https://github.com/omoju/genderCSExperience}{Predicting Gender in Introductory CS}
+\begin{itemize}[noitemsep,nolistsep]
+\item[-] Designed a comprehensive data-driven investigation on the dynamics of gender in intro CS. 
+\item[-] Implemented a gradient boosting classifier to predict gender of CS students based on experience.
+\end{itemize}
+
+\ind \href{https://github.com/omoju/SWEXSYS}{Semantic Web Expert System Shell} (SWEXSYS)
+\begin{itemize}[noitemsep,nolistsep]
+\item[-] Created an intelligent system platform capable of reasoning with multiple ontologies.
+\item[-] Adapted SWEXSYS platform to sensor fusion using Dempster-Shafer theory of uncertainty.
+\end{itemize} 
+
+\bigskip
+
+
+%% Professional Experience
+\marginhead{\sffamily {\vskip 0.35em} profession \newline experience}
+\medskip
+
+\ind {\large UC Berkeley, CSEd Doctoral Candidate, CA, Dec 2013 - May 2016.}
+\begin{itemize}[noitemsep,nolistsep]
+\item[-] Designed a data-driven investigation with machine learning to investigate gender in intro CS.
+\item[-] Built innovative data science unit within a historically \href{http://www.whitehouse.gov/the-press-office/2014/12/08/fact-sheet-new-commitments-support-computer-science-education}{intro CS course}, CS10.
+\end{itemize} 
+
+\ind {\large Google, Technology Portfolio Manager, CA, Feb 2014 - Dec 2015. }
+\begin{itemize}[noitemsep,nolistsep]
+\item[-]Co-led a \$15M CSEd portfolio. Grew the portfolio by 25\%.
+\item[-]Co-led the development of vocabulary glossary for Android Development for Beginners course
+\end{itemize} 
+
+\ind {\large ICSI, Graduate Researcher, CA, Mar 2011 - Dec 2012.}
+\begin{itemize}[noitemsep,nolistsep]
+\item[-] Implemented a conceptual metaphor \href{http://metaphor.icsi.berkeley.edu}{Semantic MediaWiki} in English, Spanish, and Farsi.
+\item[-] Contributed to the design of conceptual metaphor framework.
+\end{itemize} 
+
+\ind {\large UniversityNow, Semantic Data Scientist Intern, CA, Jun 2012 - Aug 2012.}
+\begin{itemize}[noitemsep,nolistsep]
+\item[-]Led a team to design a data analytics console to improve business intelligence on a learning platform.
+\item[-]Built back-end of data analytics console.
+\end{itemize} 
+
+\ind {\large TEDxEuclidAve, Founder and Curator, CA, Aug 2011 - Aug 2012.}
+\begin{itemize}[noitemsep,nolistsep]
+\item[-]Led the planning of \href{http://www.ted.com/tedx/events/3790}{TEDx}EuclidAve 100+ member conference in service of social entrepreneurship.
+\end{itemize} 
+
+\ind {\large Center for Advanced Sensors, Graduate Researcher, TN, Aug 2003 - Nov 2006.}
+\begin{itemize}[noitemsep,nolistsep]
+\item[-]Co-designed \href{https://scholar.google.com/scholar?hl=en&q=Building+a+Sensor+Ontology\%3A+A+Practical+Approach+Leveraging+ISO+and+OGC+Models.&btnG=&as_sdt=1\%2C43&as_sdtp=}{OntoSensor}, a sensor ontology using Semantic Web Ontology Language (OWL).
+\item[-]Created and adapted SWEXSYS platform to sensor fusion.
+\end{itemize}
+
+\ind {\large Thoughtware Learning Technologies, Software Engr, TN, Aug 1999 - Nov 2001.}
+\begin{itemize}[noitemsep,nolistsep]
+\item[-]Contributed to the development of Internet based workforce development management system.
+\end{itemize} 
+
+\bigskip 
+
+
+%% Education
+\marginhead{\sffamily {{\vskip -0.23em} education}}
+
+\ind Nanodegree, Machine Learning, Udacity, (In Progress).
+
+\ind Ph.D, Computer Science Education, UC Berkeley, 2016.
+
+\ind M.S., Electrical and Computer Engineering, University of Memphis, 2004. 
+
+\ind B.S., Computer Science, University of Memphis, 2001.
+\bigskip 
+
+%% Honors
+\marginhead{\sffamily {\vskip 0.6em}grants,\newline honors, \newline \& awards}
+\medskip
+
+\ind Levo 100: Transformer, Levo League, California, 2015.
+
+\ind Bloomberg Beta Future Founder, Bloomberg Beta, California, 2014. 
+
+\ind Winner, White House Dept of Edu EdDataPalooza, Washington DC, January 2014
+
+\end{document}
