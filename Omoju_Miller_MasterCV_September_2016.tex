@@ -41,7 +41,10 @@
 %%% remove these as needed.
 %%%------------------------------------------------------------------------
 
-\documentclass[11pt,article,oneside]{memoir}   
+\documentclass[11pt,article,oneside]{memoir} 
+\usepackage{geometry}
+ \geometry{
+ a4paper }  
 \usepackage{org-preamble-xelatex} 
 \usepackage{fontawesome,url}
 \usepackage{enumitem} %get rid of spaces in listed
@@ -53,7 +56,7 @@
 
 %% Change as needed. Or just add me as a coauthor. Only some of these are 
 %% used below in the hyperref declaration and address banner section.
-\def\myauthor{Omoju Thomas Miller}
+\def\myauthor{Omoju Miller}
 \def\mytitle{Vita}
 \def\mycopyright{\myauthor}
 \def\mykeywords{}
@@ -174,9 +177,9 @@
 \marginhead{\sffamily {{\vskip -0.23em} skills}}
 \medskip
 
-\ind Programming Languages: Python, C, C++, Ruby, HTML, Prolog
+\ind Programming Languages: Python, C, C++, Ruby, HTML, Prolog, SQL
 
-\ind Framework: NLTK, SciKit Learn, Django
+\ind Framework: XGBoost, NLTK, Pandas, Numpy, Scikit-learn
 
 \ind Version Control Systems: Git
 
@@ -234,20 +237,20 @@
 \noindent\emph{Experience \vspace{0.05in}}
 
 
-\ind Learners Guild, Chair Advisory Board, CA, Dec 2015 - Present.
+\ind {\large \textbf{Learners Guild} - \textit{Chair Advisory Board}} \hfill Oakland, CA | Dec 2015-Present
 \begin{itemize}[noitemsep,nolistsep]
 \item[-]Built inaugural advisory board.
 \item[-]Worked with CEO to identify areas where support can add a significant performance difference to the company's bottom line.
 \end{itemize} 
 
-\ind UC Berkeley, CSEd Doctoral Candidate, CA, Dec 2013 - Dec 2016.
+\ind {\large \textbf{UC Berkeley} - \textit{CSEd Doctoral Candidate}} \hfill Berkeley, CA | Dec 2013-May 2016
 \begin{itemize}[noitemsep,nolistsep]
 \item[-] Designed and executed a comprehensive data-driven investigation using machine learning to investigate the dynamics of gender in intro CS at Berkeley.
 \item[-] Built innovative data science unit within a historically \href{http://www.whitehouse.gov/the-press-office/2014/12/08/fact-sheet-new-commitments-support-computer-science-education}{intro CS course}, CS10.
 \item[-]Responsible for introduction of python programming language as part of official BJC curriculum.
 \end{itemize} 
 
-\ind Google, Technology Portfolio Manager, CA, Feb 2014 - Dec 2015. 
+\ind {\large \textbf{Google} - \textit{Technology Portfolio Manager}} \hfill Mountain View, CA | Feb 2014-Dec 2015 
 \begin{itemize}[noitemsep,nolistsep]
 \item[-]Co-led a \$15M CSEd portfolio. Grew the portfolio by 25\%.
 \item[-]Help launch CS in Media initiative aimed at increasing Computer Science awareness in media.
@@ -255,23 +258,30 @@
 \item[-]Co-led the development of vocabulary glossary for Android Development for Beginners course
 \end{itemize} 
 
-\ind International Computer Science Institute, Graduate Researcher, CA, Mar 2011 - Dec 2012.
+\ind {\large \textbf{ICSI\footnote{International Computer Science Institute}} - \textit{Graduate Researcher}} \hfill Berkeley, CA | Mar 2011-Dec 2012
 \begin{itemize}[noitemsep,nolistsep]
 \item[-] Co-designed and implemented a \href{http://metaphor.icsi.berkeley.edu}{Conceptual Metaphor Semantic MediaWiki System} to capture and model conceptual metaphors in English, Spanish, Farsi and Russian. 
 \item[-] Contributed to the design of conceptual metaphor framework as part of AI group working on computational linguistics and reasoning with particular emphasis on metaphor cognition.
 \end{itemize} 
 
-\ind UniversityNow, Semantic Data Scientist Intern, CA Jun 2012 - Aug 2012.
+\ind {\large \textbf{UniversityNow} - \textit{Data Scientist (Intern)}} \hfill San Francisco, CA | Jun 2012 -Aug 2012
 \begin{itemize}[noitemsep,nolistsep]
 \item[-]Led a team to design and create a data analytics console to improve business intelligence and illuminate how students are progressing on the learning platform.
 \end{itemize} 
 
-\ind TEDxEuclidAve, Founder and Curator, CA Aug 2011 - Aug 2012.
+\ind {\large \textbf{TEDxEuclidAve} - \textit{Founder and Curator}} \hfill Berkeley, CA | Aug 2011-Aug 2012
 \begin{itemize}[noitemsep,nolistsep]
 \item[-]Led the planning of \href{http://www.ted.com/tedx/events/3790}{TEDx}EuclidAve 100+ member conference, bringing together innovative thinkers across technology, design and entertainment in service of social entrepreneurship.
 \end{itemize} 
 
-\ind Thoughtware Learning Technologies, Inc., Software Engineer, TN Aug 1999 - Nov 2001.
+\ind {\large \textbf{Center for Advanced Sensors} - \textit{Graduate Researcher}} \hfill Memphis, TN | Aug 2003-Nov 2006
+\begin{itemize}[noitemsep,nolistsep]
+\item[-]Co-designed \href{https://scholar.google.com/scholar?hl=en&q=Building+a+Sensor+Ontology\%3A+A+Practical+Approach+Leveraging+ISO+and+OGC+Models.&btnG=&as_sdt=1\%2C43&as_sdtp=}{OntoSensor}, a sensor ontology using Semantic Web Ontology Language (OWL).
+\item[-]Created and adapted SWEXSYS platform to sensor fusion.
+\item[-]Co-wrote one of the most cited research papers in its area
+\end{itemize} 
+
+\ind {\large \textbf{Thoughtware Learning Technologies} - \textit{Software Engr}} \hfill Memphis, TN | Aug 1999-Nov 2001
 \begin{itemize}[noitemsep,nolistsep]
 \item[-]Contributed to the development of Internet based workforce development management system.
 \end{itemize} 
@@ -282,17 +292,14 @@
 %% Education
 \marginhead{\sffamily {{\vskip -0.23em} education}}
 
-\ind Nanodegree, Machine Learning, Udacity, 2016.\vspace{0.05in}
+\ind \textbf{Udacity} - Machine Learning Nanodegree  \hfill (In Progress)
 
-\ind Ph.D, Computer Science Education, UC Berkeley, 2016.
+\ind \textbf{UC Berkeley} - Computer Science Education, Ph.D. \hfill 2016
 
-\ind \hspace{0.35in} \footnotesize Dissertation: \emph{HipHopathy, A Socio-Curricular Study of Introductory Computer Science.} \normalsize \vspace{0.05in}
+\ind \textbf{University of Memphis} - Electrical and Computer Engineering, M.S. \hfill 2004
 
-\ind M.S., Electrical and Computer Engineering, University of Memphis, 2004. 
+\ind \textbf{University of Memphis} - Computer Science, B.S. \hfill 2001
 
-\ind \hspace{0.35in} \footnotesize Thesis: \emph{Semantic Web Expert System (SWEXSYS) Shell.} \normalsize \vspace{0.01in}
-
-\ind B.S., Computer Science, University of Memphis, 2001.
 \bigskip 
 
 
