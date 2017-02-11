@@ -40,14 +40,14 @@
 %%% remove these as needed.
 %%%------------------------------------------------------------------------
 
-\documentclass[10.5pt,article,oneside]{memoir}  
+\documentclass[11pt,article,oneside]{memoir}  
 \usepackage{geometry}
  \geometry{
  a4paper,
  total={170mm,257mm},
  left=40mm,
  right=10mm,
- top=20mm,
+ top=5mm,
  bottom=20mm,
  }
 \usepackage{org-preamble-xelatex} 
@@ -68,7 +68,6 @@
 \def\mybibliocommand{}
 \def\mysubtitle{}
 \def\myemail{omojumiller@cal.berkeley.edu}
-\def\myweb{http://omojumiller.com}
 \def\mytwitter{@omojumiller}
 \def\mylinkedin{http://buff.ly/1TXyVq5}
 \def\mygithub{https://github.com/omoju}
@@ -105,7 +104,7 @@
 \setsansfont[Mapping=tex-text,
 	Ligatures={Common}, 
 	Colour=AA0000]{Myriad Pro}
-\setmonofont[Mapping=tex-text,Scale=0.72]{Consolas} 
+\setmonofont[Mapping=tex-text,Scale=0.9]{Consolas} 
 
 \newfontface\scheader[SmallCapsFont={Minion Pro},SmallCapsFeatures={Letters=SmallCaps}]{Minion Pro}
 
@@ -160,109 +159,124 @@
 % dummy (needed here)
 %\end{minipage}
 \hfill
-\begin{minipage}[t]{1.6in}
+\begin{minipage}[t]{2.6in}
   \flushright \footnotesize  \addressblock 
   {\scriptsize  \texttt{\href{http://twitter.com/omojumiller}{\mytwitter}} \, \faTwitter }  \\ 
   {\scriptsize  \texttt{\href{mailto:\myemail}{\myemail}} \, \faEnvelope} \\
   {\scriptsize  \texttt{\href{\mylinkedin}{\mylinkedin}} \, \faLinkedin} \\
-  {\scriptsize  \texttt{\href{\mygithub}{\mygithub}} \, \faGithub} \\
-  {\scriptsize  \texttt{\href{\myweb}{\myweb}} \, \faGlobe}
+  {\scriptsize  \texttt{\href{\mygithub}{\mygithub}} \, \faGithub} 
 \end{minipage}
 
 \medskip
 
 %% Name 
-\noindent{\HUGE\scheader \textsc{\href{https://github.com/omoju}{omoju thomas miller}}}
+\noindent{\HUGE\scheader \textsc{\href{http://omojumiller.com/portfolio/}{omoju thomas miller}}}
 
 \bigskip       
-\noindent{\large\scheader \textsc{Data Scientist with 6 years computational intelligence experience. \\ Ex-Google | White House Influencer | UC Berkeley PhD.}}
+\noindent{\large\scheader \textsc{Ex-Google | White House Influencer | UC Berkeley Ph.D.}}
 \reversemarginpar
 
 %% Skills
 \marginhead{\sffamily {{\vskip -0.23em} skills}}
 \medskip
 
-\ind Programming Languages: Python, C, C++, Ruby, HTML, Prolog, SQL
+\ind \textbf{Programming Languages}: Python, Prolog, C, C++, Ruby(basic), SQL
 
-\ind Framework: XGBoost, NLTK, Pandas, Numpy, Scikit-learn
+\ind \textbf{Frameworks}: XGBoost, NLTK, Pandas, Numpy, Scikit-Learn, Word2Vec
 
-\ind Version Control Systems: Git
+\ind \textbf{Version Control Systems}: Git
 \bigskip 
 
 %% Projects
 \marginhead{\sffamily {\vskip 0.35em} projects}
 \medskip
 
-\ind \href{https://github.com/omoju/IntroCSExperiencePrediction}{Identify Factors that Predict Intro CS Experience Based on Gender} \hfill Sept 2016 
+\ind \href{https://github.com/omoju/creatingCustomerSegments}{Creating Customer Segments} \hfill Sept 2016 
 \begin{itemize}[noitemsep,nolistsep]
-\item[-] Designed a data-driven investigation of the experience of intro CS at UC Berkeley.
-\item[-] Implemented a XGBoost classifier to identify factors that determine CS belonging.
-\item[-] Exploited information gain and cover as a mechanism for model interpretability.
+\item[-] Built an unsupervised learning model to identify customer segments from data.
 
 \end{itemize}
 
 \ind \href{https://github.com/omoju/SWEXSYS}{Semantic Web Expert System Shell} (SWEXSYS) \hfill Sept 2006 
 \begin{itemize}[noitemsep,nolistsep]
 \item[-] Created an intelligent system platform capable of reasoning with multiple ontologies.
-\item[-] Adapted SWEXSYS platform to sensor fusion using Dempster-Shafer theory of uncertainty.
 \end{itemize} 
 
 \bigskip
 
 
 %% Professional Experience
-\marginhead{\sffamily {\vskip 0.35em} profession \newline experience}
+\marginhead{\sffamily {\vskip 0.35em} professional \newline experience}
 \medskip
 
-\ind {\large \textbf{UC Berkeley} - \textit{CSEd Doctoral Candidate}} \hfill Berkeley, CA | Dec 2013-May 2016
-\begin{itemize}[noitemsep,nolistsep]
-\item[-] Designed a data-driven, machine learning, research study to investigate gender in intro CS. 
-\item[-] Developed a data science unit within a historical \href{http://www.whitehouse.gov/the-press-office/2014/12/08/fact-sheet-new-commitments-support-computer-science-education}{intro CS course}, CS10.\\
-\ind Omoju Miller. 2016. ``Gaining Insights into the Effects of Culturally Responsive Curriculum on Historically Underrepresented Students' Desire for Computer Science.'' \emph{Proceedings of the 123rd ASEE Annual Conference, New Orleans, LA.}
-
+\ind {\large \textbf{Insight Datascience} - \textit{Data Science Fellow}} \hfill Palo Alto, CA | Jan 2017-Present
+\begin{itemize}[nolistsep]
+\item[-]Built a large-scale hierarchical classification model for a YC backed management service company.
+\item[-]Scaled solution to accommodate growing taxonomy of item categories.
 \end{itemize} 
 
+\ind {\large \textbf{UC Berkeley} - \textit{CSEd Doctoral Candidate}} \hfill Berkeley, CA | Dec 2013-May 2016
+\begin{itemize}[nolistsep]
+\item[-] Applied machine learning to investigate student decision making around computer science choices.
+\item[-] Developed a data science unit within a historical \href{http://www.whitehouse.gov/the-press-office/2014/12/08/fact-sheet-new-commitments-support-computer-science-education}{intro CS course}, CS10.
+\end{itemize}  
+
 \ind {\large \textbf{Google} - \textit{Technology Portfolio Manager}} \hfill Mountain View, CA | Feb 2014-Dec 2015
-\begin{itemize}[noitemsep,nolistsep]
+\begin{itemize}[nolistsep]
 \item[-]Co-led a \$15M CSEd portfolio. Grew the portfolio by 25\%.
 \item[-]Co-led the development of vocabulary glossary for Android Development for Beginners course.
 \end{itemize} 
 
 \ind {\large \textbf{ICSI\footnote{International Computer Science Institute}} - \textit{Graduate Researcher}} \hfill Berkeley, CA | Mar 2011-Dec 2012
-\begin{itemize}[noitemsep,nolistsep]
-\item[-] Implemented a conceptual metaphor \href{http://metaphor.icsi.berkeley.edu}{Semantic MediaWiki} in English, Spanish, and Farsi.
+\begin{itemize}[nolistsep]
+\item[-] Built a conceptual metaphor \href{http://metaphor.icsi.berkeley.edu}{Semantic MediaWiki} capable of ingesting data in English, and Farsi.
 \item[-] Contributed to the design of conceptual metaphor framework.
 \end{itemize} 
 
 \ind {\large \textbf{UniversityNow} - \textit{Data Scientist (Intern)}} \hfill San Francisco, CA | Jun 2012 -Aug 2012
-\begin{itemize}[noitemsep,nolistsep]
-\item[-]Led a 3 person team responsible for creating an analytics console for understanding user behavior.
-\item[-]Built back-end of data analytics console.
+\begin{itemize}[nolistsep]
+\item[-]Led a 3 person team responsible for creating an analytics console.
+\item[-]Pulled and integrated data from two separate database management systems.
 \end{itemize} 
 
 \ind {\large \textbf{Center for Advanced Sensors} - \textit{Graduate Researcher}} \hfill Memphis, TN | Aug 2003-Nov 2006
-\begin{itemize}[noitemsep,nolistsep]
+\begin{itemize}[nolistsep]
 \item[-]Co-designed \href{https://scholar.google.com/scholar?hl=en&q=Building+a+Sensor+Ontology\%3A+A+Practical+Approach+Leveraging+ISO+and+OGC+Models.&btnG=&as_sdt=1\%2C43&as_sdtp=}{OntoSensor}, a sensor ontology using Semantic Web Ontology Language (OWL).
-\item[-]Created and adapted SWEXSYS platform to sensor fusion.
-\item[-]Co-wrote one of the most cited research papers in its area\\
-\ind D.J. Russomanno, C. Kothari and O. Thomas. 2005. ``\href{https://scholar.google.com/citations?view_op=view_citation&hl=en&user=E7z_wrwAAAAJ&sortby=pubdate&citation_for_view=E7z_wrwAAAAJ:u5HHmVD_uO8C}{Building a Sensor Ontology: A Practical Approach Leveraging ISO and OGC Models}.'' \emph{The 2005 International Conference on Artificial Intelligence, Las Vegas, NV} 637--643. 
+\item[-]Built an intelligent reasoning agent capable of reasoning with data in XML and RDF formats
 \end{itemize}
 
 \ind {\large \textbf{Thoughtware Learning Technologies} - \textit{Software Engr}} \hfill Memphis, TN | Aug 1999-Nov 2001
-\begin{itemize}[noitemsep,nolistsep]
-\item[-]Contributed to the development of Internet based workforce development management system.
+\begin{itemize}[nolistsep]
+\item[-]Contributed to the development of eLearning workforce development management system.
+\item[-]Quality assurance for an eLearning management system.
 \end{itemize} 
+
+\bigskip 
+
+%% Teaching Experience
+\marginhead{\sffamily {\vskip 0.35em} teaching \newline experience}
+\medskip
+
+\ind {\large \textbf{UC Berkeley} - \textit{Graduate Student Instructor}} \hfill Berkeley, CA | Spring 2011
+\begin{itemize}[noitemsep,nolistsep] 
+\item[-] Introduction to C++ programming
+\end{itemize} 
+
+\ind {\large \textbf{University of Memphis} - \textit{Adjunct Faculty}} \hfill Memphis, TN | Fall 2009, Spring 2010
+\begin{itemize}[noitemsep,nolistsep]
+\item[-] C programming for Engineers
+\end{itemize}
 
 \bigskip 
 
 %% Education
 \marginhead{\sffamily {{\vskip -0.23em} education}}
 
-\ind \textbf{Udacity} - Machine Learning Nanodegree  \hfill (In Progress)
+\ind \textbf{Udacity} - Machine Learning Nanodegree  \hfill (Expected 2017)
 
 \ind \textbf{UC Berkeley} - Computer Science Education, Ph.D. \hfill 2016
 
-\ind \textbf{University of Memphis} - Electrical and Computer Engineering, M.S. \hfill 2004
+\ind \textbf{University of Memphis} - Intelligent Systems (EECE), M.S. \hfill 2004
 
 \ind \textbf{University of Memphis} - Computer Science, B.S. \hfill 2001
 
