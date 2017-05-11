@@ -63,7 +63,7 @@
 \def\mybibliostyle{plain}
 \def\mybibliocommand{}
 \def\mysubtitle{}
-\def\myemail{omojumiller@cal.berkeley.edu}
+\def\myemail{omojumiller@berkeley.edu}
 \def\myweb{https://omojumiller.com}
 \def\mytwitter{@omojumiller}
 \def\mylinkedin{http://buff.ly/1TXyVq5}
@@ -101,7 +101,7 @@
 \setsansfont[Mapping=tex-text,
 	Ligatures={Common},
 	Colour=AA0000]{Myriad Pro}
-\setmonofont[Mapping=tex-text,Scale=0.72]{Consolas}
+\setmonofont[Mapping=tex-text,Scale=1]{Consolas}
 
 \newfontface\scheader[SmallCapsFont={Minion Pro},SmallCapsFeatures={Letters=SmallCaps}]{Minion Pro}
 
@@ -156,7 +156,7 @@
 % dummy (needed here)
 %\end{minipage}
 \hfill
-\begin{minipage}[t]{1.6in}
+\begin{minipage}[t]{2in}
   \flushright \footnotesize  \addressblock
   {\scriptsize  \texttt{\href{http://twitter.com/omojumiller}{\mytwitter}} \, \faTwitter }  \\
   {\scriptsize  \texttt{\href{mailto:\myemail}{\myemail}} \, \faEnvelope} \\
@@ -177,16 +177,23 @@
 \marginhead{\sffamily {{\vskip -0.23em} skills}}
 \medskip
 
-\ind Programming Languages: Python, C, C++, Ruby, HTML, Prolog, SQL
+\ind \textbf{Programming Languages}: Python, Prolog, C, C++, Ruby(basic), SQL
 
-\ind Framework: XGBoost, NLTK, Pandas, Numpy, Scikit-learn
+\ind \textbf{Frameworks}: XGBoost, NLTK, Pandas, Numpy, Scikit-Learn, Word2Vec
 
-\ind Version Control Systems: Git
+\ind \textbf{Version Control Systems}: Git
 
 
 %% Projects
 \marginhead{\sffamily {\vskip 0.35em} projects}
 \medskip
+
+\ind \href{https://github.com/omoju/receiptdID}{ReceiptdID}
+\begin{itemize}[noitemsep,nolistsep]
+\item[-] Created a chained-multi-label, multi-class, hierarchical classification system.
+\item[-] Build ensemble method that included over 200+ individual classifiers.
+\item[-] Beat chance by 300\%.
+\end{itemize}
 
 \ind \href{https://github.com/omoju/IntroCSExperiencePrediction}{Identify Factors that Predict Intro CS Experience Based on Gender}
 \begin{itemize}[noitemsep,nolistsep]
@@ -197,34 +204,28 @@
 
 \ind \href{https://github.com/omoju/hiphopathy}{Hiphopathy}
 \begin{itemize}[noitemsep,nolistsep]
-\item[-] Designed and created a data science unit using rap lyrics for the \href{http://bjc.berkeley.edu/}{BJC}-CS10 curriculum. Implemented curriculum using Jupyter notebook and Python Natural Language Tool Kit (NLTK) package.
-\item[-] Project was implemented on \textbf{edX} MOOClet, \textit{BJC.3x: Data, Information and the Internet}. Course launched with over 20,000 students.
-\item[-] Curricula unit had a significant positive effect on female students' belief about their ability to do well in CS classes and their ability to program.
-\end{itemize}
-
-\ind \href{https://github.com/omoju/Anfis}{An Adaptive Network-based Fuzzy Inference System (ANFIS) for Breast Cancer Classification}
-\begin{itemize}[noitemsep,nolistsep]
-\item[-] Created supervised learning neural network model to classify breast cancer tissue.
-\item[-] Ran four experiments around network architecture to determine the right model.
-\item[-] Achieved a classification error of 0.9\%
+\item[-] Created a data science unit using rap lyrics for the \href{http://bjc.berkeley.edu/}{BJC}-CS10 curriculum. 
+\item[-] Implemented curriculum using Jupyter notebook and Python NLTK package.
+\item[-] Project ran on \textbf{edX} MOOClet, \textit{BJC.3x: Data, Information and the Internet}
 \end{itemize}
 
 \ind \href{https://developers.google.com/android/for-all/vocab-words/}{Vocabulary Glossary} - Android Development for Beginners course
 \begin{itemize}[noitemsep,nolistsep]
-\item[-] Created explicit mental-models to communicate computation ideas via verbal and nonverbal materials.
-\item[-] Co-Built Android For All Vocabulary Glossary for Android Development for Beginners course in partnership with \textbf{Udacity} and \textbf{Google}. Course launched with over 50,000 students.
+\item[-] Co-Built \textbf{Android For All} beginners course in partnership with \textbf{Udacity} and \textbf{Google}. 
+\item[-] Designed explicit mental-models to communicate computation ideas.
+\item[-] Course launched with over 50,000 students.
 \end{itemize}
 
 \ind \href{https://www.youtube.com/channel/UCZK66JujoN3KY3sak2kEa2w?&ab_channel=ThisIsGRIT}{\#ThisIsGrit}
 \begin{itemize}[noitemsep,nolistsep]
-\item[-] Created \#ThisIsGrit social media campaign as a response to under-matching problem highlight by the department of education.
-\item[-] Created several videos---role models in society speak of a time when things in education were really tough and they stuck it out---of high-achieving historically underrepresented persons who shared their \#ThisIsGrit stories.
-\item[-] Inspired first lady \textbf{Michelle Obama}'s \href{https://www.whitehouse.gov/reach-higher}{Reach Higher} program.
+\item[-] Created \#ThisIsGrit social media campaign as a response to under-matching problem.
+\item[-] Created several videos of high-achieving historically underrepresented persons.
+\item[-] Inspired first lady \textbf{Michelle Obama}'s \href{https://obamawhitehouse.archives.gov/reach-higher}{Reach Higher} program.
 \end{itemize}
 
 \ind \href{https://github.com/omoju/SWEXSYS}{Semantic Web Expert System Shell} (SWEXSYS)
 \begin{itemize}[noitemsep,nolistsep]
-\item[-] Created an intelligent system platform capable of reasoning from multiple ontologies using Resource Description Framework (RDF), Rule Markup Language (RuleML), as well as other knowledge expressed as functional, structural, or causal models.
+\item[-] Created an intelligent system platform capable of reasoning with multiple ontologies.
 \item[-] Built system using Prolog and XPCE package.
 \item[-] Adapted SWEXSYS platform to sensor fusion using Dempster-Shafer theory of uncertainty.
 \end{itemize}
@@ -235,57 +236,93 @@
 \marginhead{\sffamily {\vskip 0.35em} profession \newline experience}
 \medskip
 
-\noindent\emph{Experience \vspace{0.05in}}
-
-
-\ind {\large \textbf{Learners Guild} - \textit{Chair Advisory Board}} \hfill Oakland, CA | Dec 2015-Present
-\begin{itemize}[noitemsep,nolistsep]
-\item[-]Built inaugural advisory board.
-\item[-]Worked with CEO to identify areas where support can add a significant performance difference to the company's bottom line.
-\end{itemize}
+\ind {\large \textbf{Insight Datascience} - \textit{Data Science Fellow}} \hfill Palo Alto, CA | Jan 2017-Present
+\begin{itemize}[nolistsep]
+\item[-] Built a large-scale hierarchical classification model for a YC backed company.
+\item[-] Scaled solution to accommodate growing taxonomy of item categories.
+\end{itemize} 
 
 \ind {\large \textbf{UC Berkeley} - \textit{CSEd Doctoral Candidate}} \hfill Berkeley, CA | Dec 2013-May 2016
 \begin{itemize}[noitemsep,nolistsep]
-\item[-] Designed a data-driven, machine learning, research study to investigate gender in intro CS.
-\item[-] Developed a data science unit within a historical \href{http://www.whitehouse.gov/the-press-office/2014/12/08/fact-sheet-new-commitments-support-computer-science-education}{intro CS course}, CS10.\\
+\item[-] Designed a machine learning, research study to investigate gender in intro CS.
+\item[-] Developed a data science unit within a historical \href{http://www.whitehouse.gov/the-press-office/2014/12/08/fact-sheet-new-commitments-support-computer-science-education}{intro CS course}, CS10.
 \end{itemize}
 
 \ind {\large \textbf{Google} - \textit{Technology Portfolio Manager}} \hfill Mountain View, CA | Feb 2014-Dec 2015
-\begin{itemize}[noitemsep,nolistsep]
+\begin{itemize}[nolistsep]
 \item[-]Co-led a \$15M CSEd portfolio. Grew the portfolio by 25\%.
-\item[-]Co-led the development of vocabulary glossary for Android Development for Beginners course.
-\end{itemize}
+\item[-]Co-led the development of vocabulary glossary for Android Development course.
+\end{itemize} 
 
 \ind {\large \textbf{ICSI\footnote{International Computer Science Institute}} - \textit{Graduate Researcher}} \hfill Berkeley, CA | Mar 2011-Dec 2012
-\begin{itemize}[noitemsep,nolistsep]
-\item[-] Implemented a conceptual metaphor \href{http://metaphor.icsi.berkeley.edu}{Semantic MediaWiki} in English, Spanish, and Farsi.
+\begin{itemize}[nolistsep]
+\item[-] Built a conceptual metaphor \href{http://metaphor.icsi.berkeley.edu}{Semantic Wiki} capable of ingesting data in English, and Farsi.
 \item[-] Contributed to the design of conceptual metaphor framework.
-\end{itemize}
+\end{itemize} 
 
 \ind {\large \textbf{UniversityNow} - \textit{Data Scientist (Intern)}} \hfill San Francisco, CA | Jun 2012 -Aug 2012
-\begin{itemize}[noitemsep,nolistsep]
-\item[-]Led a 3 person team responsible for creating an analytics console for understanding user behavior.
-\item[-]Built back-end of data analytics console.
-\end{itemize}
+\begin{itemize}[nolistsep]
+\item[-]Led a 3 person team responsible for creating an analytics console.
+\item[-]Pulled and integrated data from two separate database management systems.
+\end{itemize} 
 
 \ind {\large \textbf{TEDxEuclidAve} - \textit{Founder and Curator}} \hfill Berkeley, CA | Aug 2011-Aug 2012
 \begin{itemize}[noitemsep,nolistsep]
-\item[-]Led the planning of \href{http://www.ted.com/tedx/events/3790}{TEDx}EuclidAve 100+ member conference, bringing together innovative thinkers across technology, design and entertainment in service of social entrepreneurship.
+\item[-]Led a 10 person team responsible for executing on the vision.
+\item[-]Led strategy for \href{http://www.ted.com/tedx/events/3790}{TEDx}EuclidAve, a 100+ member conference, bringing together innovative thinkers across technology, design and entertainment in service of social entrepreneurship.
 \end{itemize}
 
 \ind {\large \textbf{Center for Advanced Sensors} - \textit{Graduate Researcher}} \hfill Memphis, TN | Aug 2003-Nov 2006
-\begin{itemize}[noitemsep,nolistsep]
+\begin{itemize}[nolistsep]
 \item[-]Co-designed \href{https://scholar.google.com/scholar?hl=en&q=Building+a+Sensor+Ontology\%3A+A+Practical+Approach+Leveraging+ISO+and+OGC+Models.&btnG=&as_sdt=1\%2C43&as_sdtp=}{OntoSensor}, a sensor ontology using Semantic Web Ontology Language (OWL).
-\item[-]Created and adapted SWEXSYS platform to sensor fusion.
-\item[-]Co-wrote one of the most cited research papers in its area\\
+\item[-]Built an intelligent reasoning agent capable of reasoning with data in XML and RDF formats
 \end{itemize}
 
 \ind {\large \textbf{Thoughtware Learning Technologies} - \textit{Software Engr}} \hfill Memphis, TN | Aug 1999-Nov 2001
-\begin{itemize}[noitemsep,nolistsep]
-\item[-]Contributed to the development of Internet based workforce development management system.
-\end{itemize}
+\begin{itemize}[nolistsep]
+\item[-]Contributed to the development of an AI assisted eLearning workforce development system.
+\item[-]Quality assurance for an eLearning management system.
+\end{itemize} 
 
 \bigskip
+
+%% Advisory Portfolio
+\marginhead{\sffamily {\vskip 0.35em} Advisory \newline portfolio}
+\medskip
+
+\ind {\large \textbf{Reach} - \textit{Advisor}} \hfill Lagos, Nigeria | Jan 2016-Present\\
+REACH is a group savings tool. Use it with your friends, family, or any group with a common target, to save towards a financial goal
+\begin{itemize}[nolistsep]
+\item[-] Provides strategy around product market fit, and data.
+\end{itemize}  
+
+\ind {\large \textbf{Learners Guild} - \textit{Chair Advisory Board}} \hfill Oakland, CA | Dec 2015-Present\\
+Learners Guild, a California B-Corp following the principles of holocracy, is a network of guild-style professional schools that transform students into high-skilled workers in one year.
+\begin{itemize}[noitemsep,nolistsep]
+\item[-] Built inaugural advisory board.
+\end{itemize}
+
+\ind {\large \textbf{All Star Code} - \textit{Curriculum Advisor}} \hfill New York, NY | Jan 2016-Dec 2016\\
+All Star Code (ASC) empowers young men with the skills, networks, and mindset they need to create new futures through technology. 
+\begin{itemize}[noitemsep,nolistsep]
+\item[-] Served as a curriculum advisor to the summer immersion program.
+\end{itemize}
+
+\ind {\large \textbf{CODE2040} - \textit{Fellows Council Co-Chair}} \hfill San Francisco, CA | Jan 2013-Dec 2013\\
+CODE2040 is a non-profit focused on increasing the number of underrepresented minorities in the high-tech economy by providing mentorship, direction and access to networks that were previously unavailable to them.
+\begin{itemize}[nolistsep]
+\item[-] Responsible for leading and supporting recruitment and scale strategies.
+\end{itemize} 
+
+\ind {\large \textbf{Presidential Innovation Fellows} - \textit{Strategist}} \hfill The White House, Washington, DC | 2012\\
+The Presidential Innovation Fellows program brings the principles, values, and practices of the innovation economy into government.
+\begin{itemize}[nolistsep]
+\item[-] Served in volunteer capacity with CTO of the United States, Todd Park.
+\end{itemize} 
+
+\bigskip
+\bigskip
+
 
 
 %% Education
@@ -300,6 +337,42 @@
 \ind \textbf{University of Memphis} - Computer Science, B.S. \hfill 2001
 
 \bigskip
+
+%% Teaching Experience
+\marginhead{\sffamily {\vskip 0.35em} teaching \newline experience}
+\medskip
+
+\ind {\large \textbf{UC Berkeley} - \textit{Graduate Student Instructor}} \hfill Berkeley, CA | Spring 2013
+\begin{itemize}[noitemsep,nolistsep] 
+\item[-] Introduction to Cognitive Science
+\end{itemize} 
+
+\ind {\large \textbf{UC Berkeley} - \textit{Graduate Student Instructor}} \hfill Berkeley, CA | Spring 2011
+\begin{itemize}[noitemsep,nolistsep] 
+\item[-] Introduction to C++ programming
+\end{itemize} 
+
+\ind {\large \textbf{University of Memphis} - \textit{Adjunct Faculty}} \hfill Memphis, TN | Spring 2010
+\begin{itemize}[noitemsep,nolistsep]
+\item[-] C programming for Engineers
+\end{itemize}
+
+\ind {\large \textbf{University of Memphis} - \textit{Graduate Student Instructor}} \hfill Memphis, TN | Spring 2006
+\begin{itemize}[noitemsep,nolistsep]
+\item[-] Computer Software Engineering
+\end{itemize}
+
+\ind {\large \textbf{University of Memphis} - \textit{Graduate Student Instructor}} \hfill Memphis, TN | Spring 2005
+\begin{itemize}[noitemsep,nolistsep]
+\item[-] Data Visualization
+\end{itemize}
+
+\ind {\large \textbf{University of Memphis} - \textit{Graduate Student Instructor}} \hfill Memphis, TN | Spring 2004
+\begin{itemize}[noitemsep,nolistsep]
+\item[-] Introduction to Computer Engineer Lab
+\end{itemize}
+
+\bigskip 
 
 
 %% Publications
@@ -365,7 +438,7 @@
 \marginhead{\sffamily {\vskip 0.5em}selected \newline conference \newline presentations \newline since 2012}
 \medskip
 
-\ind Invited speaker ``What Makes a Coder.'' Etsy, New York, New York, February 2016.
+\ind Invited speaker ``What Makes a Coder.'' Etsy, New York, New York, February 2017.
 
 \ind Panelist ``Moral Machines: How Philosophy can help AI Decide Right from Wrong." Grace Hopper Celebration of Women in Computing, Texas, 2016.
 
@@ -399,6 +472,8 @@
 
 \marginhead{\sffamily {\vskip 0.6em}grants,\newline honors, \newline \& awards}
 \medskip
+
+\ind Member (Expert Network: AI), World Economic Forum, Davos, Switzerland, March 2017.
 
 \ind Levo 100: Transformer, Levo League, California, 2015.
 
