@@ -2,7 +2,7 @@
 
 A simple `.tex` template for making a nicely-formatted academic curriculum vitae. 
 
-This template was adapte from [kjh-vita](https://github.com/kjhealy/kjh-vita).
+This template was adapted from [kjh-vita](https://github.com/kjhealy/kjh-vita).
 
 
 # Install
