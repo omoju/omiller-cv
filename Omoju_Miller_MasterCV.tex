@@ -99,15 +99,15 @@
 	Numbers={OldStyle},
 	Ligatures={Common}]{Minion Pro}
 \setsansfont[Mapping=tex-text,
-	Ligatures={Common},
-	Colour=AA0000]{Myriad Pro}
-\setmonofont[Mapping=tex-text,Scale=1]{Consolas}
+	Ligatures={Common}, 
+	Colour=AA0000]{Unit-Medium}
+\setmonofont[Mapping=tex-text,Scale=0.72]{PragmataPro} 
 
 \newfontface\scheader[SmallCapsFont={Minion Pro},SmallCapsFeatures={Letters=SmallCaps}]{Minion Pro}
 
-\newfontface\addressblock[Mapping={tex-text},
+\newfontface\addressblock[Mapping={tex-text}, 
 	Numbers={OldStyle},
-	Ligatures={Common}]{Minion Pro Medium}
+	Ligatures={Common}]{Minion Pro Medium Caption}
 
 
 %%%------------------------------------------------------------------------
@@ -167,23 +167,27 @@
 
 \medskip
 
-%% Name
-\noindent{\LARGE\scheader \textsc{omoju thomas miller}}
-\reversemarginpar
+%% Name 
+\noindent{\HUGE\scheader \textsc{\href{http://omojumiller.com/portfolio/}{omoju thomas miller}}}
 
-\bigskip
+\bigskip       
+\noindent{\large\scheader \textsc{Ex-Google | White House Influencer | UC Berkeley Ph.D.}}
+\reversemarginpar
 
 %% Skills
 \marginhead{\sffamily {{\vskip -0.23em} skills}}
 \medskip
 
-\ind \textbf{Programming Languages}: Python, Prolog, C, C++, Ruby(basic), SQL
+\ind \textbf{Programming Languages}: Python, SQL, Prolog, C, C++, Ruby(basic)
 
-\ind \textbf{Frameworks}: XGBoost, NLTK, Pandas, Numpy, Scikit-Learn, Word2Vec
+\ind \textbf{Frameworks}: Tensor Flow, Keras, Apache Spark, Pandas, Numpy, Scikit-Learn, Gensim
 
 \ind \textbf{Version Control Systems}: Git
 
 \ind \textbf{Project Management Systems}: Agile, Kanban
+
+\bigskip 
+
 
 
 %% Projects
@@ -194,7 +198,6 @@
 \begin{itemize}[noitemsep,nolistsep]
 \item[-] Created a chained-multi-label, multi-class, hierarchical classification system.
 \item[-] Build ensemble method that included over 200+ individual classifiers.
-\item[-] Beat chance by 300\%.
 \end{itemize}
 
 \ind \href{https://github.com/omoju/IntroCSExperiencePrediction}{Identify Factors that Predict Intro CS Experience Based on Gender}
@@ -228,7 +231,6 @@
 \ind \href{https://github.com/omoju/SWEXSYS}{Semantic Web Expert System Shell} (SWEXSYS)
 \begin{itemize}[noitemsep,nolistsep]
 \item[-] Created an intelligent system platform capable of reasoning with multiple ontologies.
-\item[-] Built system using Prolog and XPCE package.
 \item[-] Adapted SWEXSYS platform to sensor fusion using Dempster-Shafer theory of uncertainty.
 \end{itemize}
 
@@ -238,10 +240,16 @@
 \marginhead{\sffamily {\vskip 0.35em} profession \newline experience}
 \medskip
 
-\ind {\large \textbf{Insight Datascience} - \textit{Data Science Fellow}} \hfill Palo Alto, CA | Jan 2017-Present
+\ind {\large \textbf{GitHub} - \textit{Senior Data Scientist, Machine Learning}} \hfill San Francisco, CA | July 2017-Present
 \begin{itemize}[nolistsep]
-\item[-] Built a large-scale hierarchical classification model for a YC backed company.
-\item[-] Scaled solution to accommodate growing taxonomy of item categories.
+\item[-]Co-Developed Discovery Dashboard Recommendation Engine.
+\item[-]Attained a click-through rate of 20\%.
+\end{itemize} 
+
+\ind {\large \textbf{Insight Data Science} - \textit{Data Science Fellow}} \hfill Palo Alto, CA | Jan 2017-Jun 2017
+\begin{itemize}[nolistsep]
+\item[-]Built a large-scale hierarchical classification model for a YC backed management service company.
+\item[-]Scaled solution to accommodate growing taxonomy of item categories.
 \end{itemize} 
 
 \ind {\large \textbf{UC Berkeley} - \textit{CSEd Doctoral Candidate}} \hfill Berkeley, CA | Dec 2013-May 2016
@@ -344,6 +352,11 @@ The Presidential Innovation Fellows program brings the principles, values, and p
 \marginhead{\sffamily {\vskip 0.35em} teaching \newline experience}
 \medskip
 
+\ind {\large \textbf{Metis Data Science} - \textit{Instructor}} \hfill San Francisco, CA | Fall 2017
+\begin{itemize}[noitemsep,nolistsep]
+\item[-] Introduction to Data Science
+\end{itemize}
+
 \ind {\large \textbf{UC Berkeley} - \textit{Graduate Student Instructor}} \hfill Berkeley, CA | Spring 2013
 \begin{itemize}[noitemsep,nolistsep] 
 \item[-] Introduction to Cognitive Science
@@ -405,6 +418,8 @@ The Presidential Innovation Fellows program brings the principles, values, and p
 %\renewcommand{\labelenumi}{\textsc{r}\theenumi.}
 %\begin{revnumerate}
 
+\ind Omoju Miller. 2017. ``An introduction to Bagging Models.'' \emph{Demystifying Deep Learning and AI, Noroff, Oslo.}
+
 \ind Jennifer Arguello, Tiffany Price, Alexis Martin, Frieda McAlear, Omoju Miller, Dan Garcia. 2015. ``Engaging Underrepresented Youth in Computer Science."  \emph{Computer Science Teachers Association (CSTA) in Grapevine, TX.}
 
 \ind Omoju Miller. 2015. ``Towards a Global Framework for Culturally Resonant Learning.'' \emph{2015 Sage Assembly in Paris, France.}
@@ -440,9 +455,15 @@ The Presidential Innovation Fellows program brings the principles, values, and p
 \marginhead{\sffamily {\vskip 0.5em}selected \newline conference \newline presentations \newline since 2012}
 \medskip
 
+\ind Invited speaker ``\href{https://youtu.be/BFWVHSeakkg}{On learning AI: The Myth of Innate Ability in Tech}.'' TEDxSanFrancisco, San Francisco, California, October 2017.
+
+\ind Invited speaker ``On learning AI: The myth of innate ability in tech.'' Data Institute, San Francisco, California, October 2017.
+
+\ind Panelist ``Black Work, Black Wealth, Black Futures." Data For Black Lives, MIT, Massachusetts, November 2017.
+
 \ind Invited speaker ``What Makes a Coder.'' Etsy, New York, New York, February 2017.
 
-\ind Panelist ``Moral Machines: How Philosophy can help AI Decide Right from Wrong." Grace Hopper Celebration of Women in Computing, Texas, 2016.
+\ind Panelist ``Moral Machines: How Philosophy can help AI Decide Right from Wrong." Grace Hopper Celebration of Women in Computing, Texas, October 2016.
 
 \ind Keynote ``15+ Years of Learning Computational Intelligence.'' Annual OUSD Dinner with a Scientist, California, May 2016.
 
@@ -497,6 +518,8 @@ The Presidential Innovation Fellows program brings the principles, values, and p
 
 \marginhead{\sffamily {\vskip 0.6em}press,\newline podcast, \newline \& coverage}
 \medskip
+
+\ind \href{http://observer.com/2017/02/omoju-miller-etsy-stem-pipeline/}{Berkeley PhD's 4-Step Plan to a STEM Pipeline That Works for Everyone}, The Observer, February 16, 2017.
 
 \ind \href{https://soundcloud.com/stack-exchange/stack-overflow-podcast-91-can-you-stump-nick-craver}{Can You Stump Nick Craver?}, Featured in Stack Overflow Podcast \#91, October 2016.
 

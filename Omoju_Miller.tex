@@ -94,23 +94,24 @@
 \begin{document}
 
 %% Choose fonts for use with xelatex
-%% Minion and Myriad are widely available, from Adobe. 
+%% Minion and Myriad are widely available, from Adobe.
 %% Pragmata is available to buy at http://www.fsd.it/fonts/pragma.htm
 %% and is worth every penny. Any good monospace font will work fine, though.
 %% Consolas or inconsolata are good alternatives.
-\setromanfont[Mapping={tex-text}, 
+\setromanfont[Mapping={tex-text},
 	Numbers={OldStyle},
 	Ligatures={Common}]{Minion Pro}
 \setsansfont[Mapping=tex-text,
 	Ligatures={Common}, 
-	Colour=AA0000]{Myriad Pro}
-\setmonofont[Mapping=tex-text,Scale=0.9]{Consolas} 
+	Colour=AA0000]{Unit-Medium}
+\setmonofont[Mapping=tex-text,Scale=0.72]{PragmataPro} 
 
 \newfontface\scheader[SmallCapsFont={Minion Pro},SmallCapsFeatures={Letters=SmallCaps}]{Minion Pro}
 
 \newfontface\addressblock[Mapping={tex-text}, 
 	Numbers={OldStyle},
-	Ligatures={Common}]{Minion Pro Medium}
+	Ligatures={Common}]{Minion Pro Medium Caption}
+
 
 
 %%%------------------------------------------------------------------------
@@ -180,20 +181,45 @@
 \marginhead{\sffamily {{\vskip -0.23em} skills}}
 \medskip
 
-\ind \textbf{Programming Languages}: Python, Prolog, C, C++, Ruby(basic), SQL
+\ind \textbf{Programming Languages}: Python, SQL, Prolog, C, C++, Ruby(basic)
 
+<<<<<<< Updated upstream
 \ind \textbf{Frameworks}: MLib, PySpark, XGBoost, NLTK, Pandas, Numpy, Scikit-Learn
+=======
+<<<<<<< HEAD
+\ind \textbf{Frameworks}: Tensor Flow, Keras, Apache Spark, Pandas, Numpy, Scikit-Learn, Gensim
+=======
+\ind \textbf{Frameworks}: MLib, PySpark, XGBoost, NLTK, Pandas, Numpy, Scikit-Learn
+>>>>>>> origin/master
+>>>>>>> Stashed changes
 
 \ind \textbf{Version Control Systems}: Git
+
+\ind \textbf{Project Management Systems}: Agile, Kanban
 \bigskip 
+
+
 
 %% Projects
 \marginhead{\sffamily {\vskip 0.35em} projects}
 \medskip
 
+<<<<<<< Updated upstream
 \ind \href{https://github.com/omoju/receiptdID}{Receipt.ID} \hfill March 2017 
 \begin{itemize}[noitemsep,nolistsep]
 \item[-] Built a multi-label, multi-class, hierarchical classification system.
+=======
+<<<<<<< HEAD
+\ind \href{https://github.com/omoju/receiptdID}{ReceiptdID}
+\begin{itemize}[noitemsep,nolistsep]
+\item[-] Created a chained-multi-label, multi-class, hierarchical classification system.
+\item[-] Build ensemble method that included over 200+ individual classifiers.
+=======
+\ind \href{https://github.com/omoju/receiptdID}{Receipt.ID} \hfill March 2017 
+\begin{itemize}[noitemsep,nolistsep]
+\item[-] Built a multi-label, multi-class, hierarchical classification system.
+>>>>>>> origin/master
+>>>>>>> Stashed changes
 \end{itemize}
 
 \ind \href{https://github.com/omoju/SWEXSYS}{Semantic Web Expert System Shell} (SWEXSYS) \hfill Sept 2006 
@@ -208,12 +234,25 @@
 \marginhead{\sffamily {\vskip 0.35em} professional \newline experience}
 \medskip
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+\ind {\large \textbf{GitHub} - \textit{Senior Data Scientist, Machine Learning}} \hfill San Francisco, CA | July 2017-Present
+\begin{itemize}[nolistsep]
+\item[-]Co-Developed Discovery Dashboard Recommendation Engine.
+\item[-]Attained a click-through rate of 20\%.
+\end{itemize} 
+
+\ind {\large \textbf{Insight Data Science} - \textit{Data Science Fellow}} \hfill Palo Alto, CA | Jan 2017-Jun 2017
+=======
+>>>>>>> Stashed changes
 \ind {\large \textbf{GitHub} - \textit{Senior Data Scientist}} \hfill San Francisco, CA | July 2017-Present
 \begin{itemize}[nolistsep]
 \item[-]Co-developed recommendation system.
 \end{itemize} 
 
 \ind {\large \textbf{Insight Datascience} - \textit{Data Science Fellow}} \hfill Palo Alto, CA | Jan 2017-Present
+>>>>>>> origin/master
 \begin{itemize}[nolistsep]
 \item[-]Built a large-scale hierarchical classification model for a YC backed management service company.
 \item[-]Scaled solution to accommodate growing taxonomy of item categories.
@@ -261,22 +300,22 @@
 \marginhead{\sffamily {\vskip 0.35em} teaching \newline experience}
 \medskip
 
+\ind {\large \textbf{Metis Data Science} - \textit{Instructor}} \hfill San Francisco, CA | Fall 2017
+\begin{itemize}[noitemsep,nolistsep]
+\item[-] Introduction to Data Science
+\end{itemize}
+
 \ind {\large \textbf{UC Berkeley} - \textit{Graduate Student Instructor}} \hfill Berkeley, CA | Spring 2011
 \begin{itemize}[noitemsep,nolistsep] 
 \item[-] Introduction to C++ programming
 \end{itemize} 
-
-\ind {\large \textbf{University of Memphis} - \textit{Adjunct Faculty}} \hfill Memphis, TN | Fall 2009, Spring 2010
-\begin{itemize}[noitemsep,nolistsep]
-\item[-] C programming for Engineers
-\end{itemize}
 
 \bigskip 
 
 %% Education
 \marginhead{\sffamily {{\vskip -0.23em} education}}
 
-\ind \textbf{Udacity} - Machine Learning Nanodegree  \hfill (Expected 2017)
+\ind \textbf{Udacity} - Machine Learning Nanodegree  \hfill (In Progress)
 
 \ind \textbf{UC Berkeley} - Computer Science Education, Ph.D. \hfill 2016
 
