@@ -33,7 +33,9 @@
   {\csname faicon@#1\endcsname}}
 
 % generic icon commands and aliases
-\input{fontawesomesymbols-generic.tex}
+
+
+%\input{fontawesomesymbols-generic.tex}
 
 %-------------------------------------------------------------------------------
 %                xe- and lualatex implementation
@@ -45,6 +47,8 @@
 \newfontfamily{\FA}{FontAwesome}
 
 % icon-specific commands
+
+
 \input{fontawesomesymbols-xeluatex.tex}
 
 %-------------------------------------------------------------------------------
@@ -60,14 +64,6 @@
 \input{fontawesomesymbols-pdftex.tex}
 
 \fi
-
-%-------------------------------------------------------------------------------
-%                fix for FontAwesome icon names containing numerals
-%-------------------------------------------------------------------------------
-\renewcommand{\faHourglass}[1][]{%
-  \faicon{hourglass\if\relax\detokenize{#1}\relax\else-#1\fi}}
-\renewcommand{\faBattery}[1][4]{%
-  \faicon{battery-#1}}
 
 
 \endinput
