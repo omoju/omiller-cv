@@ -1,5 +1,6 @@
-%%% A template to produce a nice-looking Resume.
-%%% Adapted from Kieran Healy 
+
+%%% A template to produce a nice-looking Curriculum Vitae.
+%%% Adapted from Kieran Healy
 %%% Most recent version is at http://kjhealy.github.com/kjh-vita
 %%%
 %%% ------------------------------------------------------------------------
@@ -15,8 +16,8 @@
 %%% memoir.cls
 %%% fontawesome.sty
 %%%
-%%% 
-%%% 
+%%%
+%%%
 %%% ------------------------------------------------------------------------
 %%% Requirements from https://github.com/kjhealy/latex-custom-kjh
 %%% ------------------------------------------------------------------------
@@ -34,9 +35,9 @@
 %%% ------------------------------------------------------------------------
 %%% Note
 %%%------------------------------------------------------------------------
-%%% Because this is a hand-tweaked file, be on the look out for \medksip, 
+%%% Because this is a hand-tweaked file, be on the look out for \medksip,
 %%% \bigskip and \newpage commands here and there, which are used to balance
-%%% the layout or avoid widows & orphans, etc. You should of course add or 
+%%% the layout or avoid widows & orphans, etc. You should of course add or
 %%% remove these as needed.
 %%%------------------------------------------------------------------------
 
@@ -54,13 +55,14 @@
 \usepackage{fontawesome,url}
 \usepackage{enumitem} %get rid of spaces in listed
 
+
 %%%------------------------------------------------------------------------
 %%% Metadata
 %%%------------------------------------------------------------------------
 
-%% Change as needed. Or just add me as a coauthor. Only some of these are 
+%% Change as needed. Or just add me as a coauthor. Only some of these are
 %% used below in the hyperref declaration and address banner section.
-\def\myauthor{Omoju Thomas Miller}
+\def\myauthor{Omoju Miller}
 \def\mytitle{Vita}
 \def\mycopyright{\myauthor}
 \def\mykeywords{}
@@ -69,7 +71,7 @@
 \def\mysubtitle{}
 \def\myemail{omojumiller@berkeley.edu}
 \def\mytwitter{@omojumiller}
-\def\mylinkedin{http://buff.ly/1TXyVq5}
+\def\mylinkedin{https://www.linkedin.com/in/omojumiller}
 \def\mygithub{https://github.com/omoju}
 \def\myversion{}
 \def\myrevision{}
@@ -78,10 +80,10 @@
 %% \def\myaffiliation{Duke University}
 \def\myauthor{Omoju Thomas Miller}
 \date{} % not used (revision control instead)
-\def\mykeywords{Omoju, Miller, Omoju Miller, Vita, CV, Resume, Data Scientist}
+\def\mykeywords{Omoju, Thomas Miller, Omoju Thomas Miller, Vita, CV, Resume, Data Scientist}
 
-%%%------------------------------------------------------------------------  
-%%% Git version tracking 
+%%%------------------------------------------------------------------------
+%%% Git version tracking
 %%%------------------------------------------------------------------------
 
 %% If you don't use git or the vc package (from CTAN), comment this out.
@@ -113,15 +115,14 @@
 	Ligatures={Common}]{Minion Pro Medium Caption}
 
 
-
 %%%------------------------------------------------------------------------
 %%% Local commands
 %%%------------------------------------------------------------------------
 
 %% Marginal header
 %% Note: as the document goes on you may need to introduce a (gradually increasing)
-%% \vspace element to keep the marginal header pleasingly aligned with the first 
-%% item in the body text. Like this: \marginhead{{\vskip 0.4em}Grants}, or 
+%% \vspace element to keep the marginal header pleasingly aligned with the first
+%% item in the body text. Like this: \marginhead{{\vskip 0.4em}Grants}, or
 %% \marginhead{{\vskip 0.8em}Service}. Experiment as needed.
 \newcommand{\marginhead}[1]{\marginpar{\textsf{{\footnotesize\vspace{-1em}\flushright #1}}}}
 
@@ -130,7 +131,7 @@
 % \newcommand{\amper}{{\fontspec[Scale=.95,Colour=AA0000]{Minion Pro Medium}\selectfont\&\,}}
 
 %% No bullets on labels
-\renewcommand{\labelitemi}{~} 
+\renewcommand{\labelitemi}{~}
 
 %% Custom hanging indent for vita items
 \def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
@@ -145,7 +146,7 @@
 % These lines will insert git revision info in the footer, using the vc
 % package---see docs for vc package for details. Comment out this line
 % if you're not using vc, and also remove the \input{vc} line above.
-%\pagestyle{kjh}
+\pagestyle{kjh}
 \thispagestyle{kjhgit}
 
 
@@ -153,19 +154,20 @@
 %%% Address and contact block
 %%%------------------------------------------------------------------------
 \begin{minipage}[t]{2.95in}
-  
+
 \end{minipage}
-\hfill     
+\hfill
 %\begin{minipage}[t]{0.0in}
 % dummy (needed here)
 %\end{minipage}
 \hfill
-\begin{minipage}[t]{2.6in}
-  \flushright \footnotesize  \addressblock 
-  {\scriptsize  \texttt{\href{http://twitter.com/omojumiller}{\mytwitter}} \, \faTwitter }  \\ 
+\begin{minipage}[t]{2in}
+  \flushright \footnotesize  \addressblock
+  {\scriptsize  \texttt{\href{http://twitter.com/omojumiller}{\mytwitter}} \, \faTwitter }  \\
   {\scriptsize  \texttt{\href{mailto:\myemail}{\myemail}} \, \faEnvelope} \\
   {\scriptsize  \texttt{\href{\mylinkedin}{\mylinkedin}} \, \faLinkedin} \\
-  {\scriptsize  \texttt{\href{\mygithub}{\mygithub}} \, \faGithub} 
+  {\scriptsize  \texttt{\href{\mygithub}{\mygithub}} \, \faGithub} \\
+  {\scriptsize  \texttt{\href{\myweb}{\myweb}} \, \faGlobe}
 \end{minipage}
 
 \medskip
@@ -174,7 +176,7 @@
 \noindent{\HUGE\scheader \textsc{\href{http://omojumiller.com/portfolio/}{omoju thomas miller}}}
 
 \bigskip       
-\noindent{\large\scheader \textsc{Ex-Google | UC Berkeley Ph.D.}}
+\noindent{\large\scheader \textsc{Ex-Google | White House Influencer | UC Berkeley Ph.D.}}
 \reversemarginpar
 
 %% Skills
@@ -183,19 +185,12 @@
 
 \ind \textbf{Programming Languages}: Python, SQL, Prolog, C, C++, Ruby(basic)
 
-<<<<<<< Updated upstream
-\ind \textbf{Frameworks}: MLib, PySpark, XGBoost, NLTK, Pandas, Numpy, Scikit-Learn
-=======
-<<<<<<< HEAD
 \ind \textbf{Frameworks}: Tensor Flow, Keras, Apache Spark, Pandas, Numpy, Scikit-Learn, Gensim
-=======
-\ind \textbf{Frameworks}: MLib, PySpark, XGBoost, NLTK, Pandas, Numpy, Scikit-Learn
->>>>>>> origin/master
->>>>>>> Stashed changes
 
 \ind \textbf{Version Control Systems}: Git
 
 \ind \textbf{Project Management Systems}: Agile, Kanban
+
 \bigskip 
 
 
@@ -204,75 +199,49 @@
 \marginhead{\sffamily {\vskip 0.35em} projects}
 \medskip
 
-<<<<<<< Updated upstream
-\ind \href{https://github.com/omoju/receiptdID}{Receipt.ID} \hfill March 2017 
-\begin{itemize}[noitemsep,nolistsep]
-\item[-] Built a multi-label, multi-class, hierarchical classification system.
-=======
-<<<<<<< HEAD
-\ind \href{https://github.com/omoju/receiptdID}{ReceiptdID}
+\ind \href{https://github.com/omoju/receiptdID}{ReceiptdID} \hfill Jan 2017
 \begin{itemize}[noitemsep,nolistsep]
 \item[-] Created a chained-multi-label, multi-class, hierarchical classification system.
 \item[-] Build ensemble method that included over 200+ individual classifiers.
-=======
-\ind \href{https://github.com/omoju/receiptdID}{Receipt.ID} \hfill March 2017 
-\begin{itemize}[noitemsep,nolistsep]
-\item[-] Built a multi-label, multi-class, hierarchical classification system.
->>>>>>> origin/master
->>>>>>> Stashed changes
 \end{itemize}
 
-\ind \href{https://github.com/omoju/SWEXSYS}{Semantic Web Expert System Shell} (SWEXSYS) \hfill Sept 2006 
+\ind \href{https://github.com/omoju/SWEXSYS}{Semantic Web Expert System Shell} (SWEXSYS) \hfill Aug 2004
 \begin{itemize}[noitemsep,nolistsep]
 \item[-] Created an intelligent system platform capable of reasoning with multiple ontologies.
-\end{itemize} 
-
+\end{itemize}
 \bigskip
 
-
 %% Professional Experience
-\marginhead{\sffamily {\vskip 0.35em} professional \newline experience}
+\marginhead{\sffamily {\vskip 0.35em} profession \newline experience}
 \medskip
 
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
 \ind {\large \textbf{GitHub} - \textit{Senior Data Scientist, Machine Learning}} \hfill San Francisco, CA | July 2017-Present
 \begin{itemize}[nolistsep]
+\item[-]Works on applied machine learning to optimize software development lifecycle on GitHub.
 \item[-]Co-Developed Discovery Dashboard Recommendation Engine.
-\item[-]Attained a click-through rate of 20\%.
 \end{itemize} 
 
 \ind {\large \textbf{Insight Data Science} - \textit{Data Science Fellow}} \hfill Palo Alto, CA | Jan 2017-Jun 2017
-=======
->>>>>>> Stashed changes
-\ind {\large \textbf{GitHub} - \textit{Senior Data Scientist}} \hfill San Francisco, CA | July 2017-Present
-\begin{itemize}[nolistsep]
-\item[-]Co-developed recommendation system.
-\end{itemize} 
-
-\ind {\large \textbf{Insight Datascience} - \textit{Data Science Fellow}} \hfill Palo Alto, CA | Jan 2017-Present
->>>>>>> origin/master
 \begin{itemize}[nolistsep]
 \item[-]Built a large-scale hierarchical classification model for a YC backed management service company.
 \item[-]Scaled solution to accommodate growing taxonomy of item categories.
 \end{itemize} 
 
 \ind {\large \textbf{UC Berkeley} - \textit{CSEd Doctoral Candidate}} \hfill Berkeley, CA | Dec 2013-May 2016
-\begin{itemize}[nolistsep]
-\item[-] Applied machine learning to investigate student decision making around computer science choices.
+\begin{itemize}[noitemsep,nolistsep]
+\item[-] Designed a machine learning, research study to investigate gender in intro CS.
 \item[-] Developed a data science unit within a historical \href{http://www.whitehouse.gov/the-press-office/2014/12/08/fact-sheet-new-commitments-support-computer-science-education}{intro CS course}, CS10.
-\end{itemize}  
+\end{itemize}
 
 \ind {\large \textbf{Google} - \textit{Technology Portfolio Manager}} \hfill Mountain View, CA | Feb 2014-Dec 2015
 \begin{itemize}[nolistsep]
 \item[-]Co-led a \$15M CSEd portfolio. Grew the portfolio by 25\%.
-\item[-]Co-led the development of vocabulary glossary for Android Development for Beginners course.
+\item[-]Co-led the development of vocabulary glossary for Android Development course.
 \end{itemize} 
 
 \ind {\large \textbf{ICSI\footnote{International Computer Science Institute}} - \textit{Graduate Researcher}} \hfill Berkeley, CA | Mar 2011-Dec 2012
 \begin{itemize}[nolistsep]
-\item[-] Built a conceptual metaphor \href{http://metaphor.icsi.berkeley.edu}{Semantic MediaWiki} capable of ingesting data in English, and Farsi.
+\item[-] Built a conceptual metaphor \href{http://metaphor.icsi.berkeley.edu}{Semantic Wiki} capable of ingesting data in English, and Farsi.
 \item[-] Contributed to the design of conceptual metaphor framework.
 \end{itemize} 
 
@@ -290,11 +259,10 @@
 
 \ind {\large \textbf{Thoughtware Learning Technologies} - \textit{Software Engr}} \hfill Memphis, TN | Aug 1999-Nov 2001
 \begin{itemize}[nolistsep]
-\item[-]Contributed to the development of eLearning workforce development management system.
+\item[-]Contributed to the development of an AI eLearning workforce development platform.
 \item[-]Quality assurance for an eLearning management system.
 \end{itemize} 
-
-\bigskip 
+\bigskip
 
 %% Teaching Experience
 \marginhead{\sffamily {\vskip 0.35em} teaching \newline experience}
@@ -312,27 +280,26 @@
 
 \bigskip 
 
+
 %% Education
 \marginhead{\sffamily {{\vskip -0.23em} education}}
 
-\ind \textbf{Udacity} - Machine Learning Nanodegree  \hfill (In Progress)
-
 \ind \textbf{UC Berkeley} - Computer Science Education, Ph.D. \hfill 2016
 
-\ind \textbf{University of Memphis} - Intelligent Systems (EECE), M.S. \hfill 2004
+\ind \textbf{University of Memphis} - Electrical and Computer Engineering, M.S. \hfill 2004
 
 \ind \textbf{University of Memphis} - Computer Science, B.S. \hfill 2001
 
-\bigskip 
+\bigskip
 
-%% Honors
+
 \marginhead{\sffamily {\vskip 0.6em}grants,\newline honors, \newline \& awards}
 \medskip
 
-\ind Member, World Economic Forum (Expert Network: AI and Robotics), Davos, Switzerland \hfill 2017
+\ind Member (Expert Network: AI), World Economic Forum, Davos, Switzerland, March 2017.
 
-\ind Winner, White House Dept of Edu EdDataPalooza, Washington DC \hfill 2014
+\ind Bloomberg Beta Future Founder, Bloomberg Beta, California, 2014.
 
-\ind Bloomberg Beta Future Founder, Bloomberg Beta, San Francisco CA \hfill 2014
+\ind Winner, White House Dept of Edu EdDataPalooza, Washington DC, January 2014.
 
 \end{document}
